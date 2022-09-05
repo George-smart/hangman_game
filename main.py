@@ -70,9 +70,7 @@ def get_valid_word(words):
 
 def hangman2():
     # initaializing the word to guess from and guessed word and lives
-    # word = get_valid_word(words)
-    words = ['javascript', 'python', 'react', 'developer', 'computer', 'technology']
-    word = random.choice(words).upper()
+    word = get_valid_word(words)
     word_letters = set(word) # letters in the word
     alphabet = set(string.ascii_uppercase)
     used_letters = set() # what the user has guessed
